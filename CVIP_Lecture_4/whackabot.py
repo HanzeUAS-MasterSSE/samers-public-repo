@@ -1,7 +1,5 @@
-# https://www.classicgame.com/game/Whack+a+Mole
-
 #imports
-# from re import template
+from re import template
 import cv2
 import pyautogui
 from time import sleep
@@ -13,9 +11,10 @@ pyautogui.PAUSE = 0
 template = cv2.imread("mole_nose.png")
 template_gray = cv2.cvtColor(template, cv2.COLOR_RGB2GRAY)
 template_w, template_h = template_gray.shape[::-1]
+# template_h, template_w = template_gray.shape
 
 # game window dimensions (NOTE: THESE DIFFER BY SCREEN RESOLUTION!)
-x, y, w, h = 535, 267, 905, 650
+x, y, w, h = 404, 258, 663, 442
 
 #wait 3 seconds so we can set up the right screen
 sleep(3)
@@ -30,7 +29,7 @@ while True:
     #sub loop - for template matching (finding max_val over and over again)
     while True:
 
-        #show what the computer sees
+        # show what the computer sees
         image_mini = cv2.resize(
             src = image,
             dsize = (450,350) #must be integer, not float

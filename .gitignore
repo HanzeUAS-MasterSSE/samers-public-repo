@@ -3,3 +3,6 @@
 /CVIP_Lecture_5/slight_turn.jpg
 CVIP_Lecture_5/side_image.jpg
 CVIP_Lecture_5/face_trained.yml
+CVIP_Lecture_6/goturn.caffemodel
+CVIP_Lecture_6/model/pose_iter_160000.caffemodel
+CVIP_Lecture_6/model/pose_deploy_linevec_faster_4_stages.prototxt
